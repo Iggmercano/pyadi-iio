@@ -101,6 +101,10 @@ class max14001(rx, context_manager):
             """MAX14001 channel scale."""
             return float(self._get_iio_attr_str(self.name, "scale", False))
 
+        @property
+        def offset(self):
+            return self._get_iio_attr(self.name, "offset", False)
+
     def to_volts(self, index, val):
         """Converts raw value to SI."""
         _scale = self.channel[index].scale

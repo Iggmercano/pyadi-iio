@@ -112,6 +112,7 @@ from adi.ltc2387 import ltc2387
 from adi.ltc2499 import ltc2499
 from adi.ltc2983 import ltc2983
 from adi.max11205 import max11205
+from adi.max14001 import max14001
 from adi.max31855 import max31855
 from adi.one_bit_adc_dac import one_bit_adc_dac
 from adi.QuadMxFE_multi import QuadMxFE_multi
